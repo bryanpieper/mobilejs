@@ -43,7 +43,9 @@ var MobileOrientation = (function($) {
 			// detect screen orientation manually for maximum device support
 			if (screen.height < screen.width) {
 				MobileOrientation.orientation = "landscape";
-			}
+			} else {
+                MobileOrientation.orientation = "portait";
+            }
 			
 			$("body").removeClass("portrait landscape").addClass(MobileOrientation.orientation);
 			
